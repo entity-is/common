@@ -7,7 +7,7 @@
 
 
 
-% Polyglossia
+% Paket „polyglossia“
 	\setdefaultlanguage[
 		variant=german,       % „german“ oder „austrian“
 		spelling=new,         % Reformierte Trennregeln von 1996
@@ -52,10 +52,37 @@
 	\definecolor{Finder-Tag-Violet}{RGB}{214,143,231}
 	\definecolor{Finder-Tag-Gray}{RGB}{164,164,167}
 
-% tabularx
+% Paket „tabularx“
 	% Tabellenspalten mit linksbündigen Paragraphen
 	% in der Schriftgröße „footnotesize“
 		\newcolumntype{F}{>{\footnotesize\raggedright\arraybackslash}X}
+
+% Paket „listingsutf8“
+	\lstset{
+		language=bash, %[LaTeX]tex,
+		basicstyle=\tiny\ttfamily,
+		showspaces=false,
+		showtabs=false,
+		tabsize=2,
+		%keywordstyle=\bf,
+		identifierstyle=\color{Solarized-Blue},
+		commentstyle=\color{Solarized-Base1},
+		%stringstyle=\ttfamily,
+		showstringspaces=true,
+		numbers=left,
+		numbersep=1.5em,
+		numberstyle=\tiny,
+		firstnumber=1,
+		numberfirstline=true,
+		stepnumber=1,
+		xleftmargin=3em,
+		frame=trbl,
+		frameround=ffff,
+		framesep=1em,
+		rulecolor=\color{Solarized-Base0},
+		backgroundcolor=\color{Solarized-Base3},
+		breaklines=true
+	}
 
 % Zeilenabstand in Tabellen vergrößern
 	\renewcommand{\arraystretch}{1.15}
